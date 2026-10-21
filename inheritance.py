@@ -25,3 +25,24 @@ class Matthew(familymember):
 
 occupation1 = Matthew('brown', 'Arua City', 'Software Engineer')
 print(occupation1.describemember())
+
+
+class Person:
+    def __init__(self, fname, lname):
+        self.fname = fname
+        self.lname = lname
+
+    def printname(self):
+        print(self.fname, self.lname)
+
+x= Person("John", "Doe")
+x.printname
+
+class Student(Person):
+    def __init__(self, fname, lname, year):                    # (pass) if not adding any other attributes to the child class
+        super().__init__(fname, lname)
+        self.graduationyear = year       #overrides parent's __init__ function           
+    def welcome(self):
+        print(f"Welcome {self.fname}, {self.lname}, to class of, {self.graduationyear}")
+x = Student("Mike", "Olsen", 2019)
+x.printname

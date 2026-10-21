@@ -2,9 +2,9 @@
 class boda:
     business = "Safety First Boda Boda"
     def __init__(self, name, address, license_no):
-        self.name = name
-        self.address = address
-        self.license_number = license_no
+            self.name = name
+            self.address = address
+            self.license_number = license_no
     def display_info(self):
         print(f"Business Name: {self.business}")
         print(f"Driver Name: {self.name}")
@@ -83,7 +83,7 @@ boda2 = boda2.display_info()
 boda3 = boda3.display_info()
 
 ##License Renewal
-license1 = boda.renew_license(50000, "2 years", "UA 1714")
+license1 = boda.renew_license(50000, 2, "UA 1714")
 license2 = boda.renew_license(50000, "1 year", "UA 1217")
 license3 = boda.renew_license(50000, "3 years", "UA 1321")
 license1 = license1.display_renewal_fee()
